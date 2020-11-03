@@ -1,0 +1,1491 @@
+fileFormatVersion: 2
+guid: 75952a66b9388cb4fb655c962942c927
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black.1
+    second: {fileID: 2100000, guid: ccb7260c67a7b524ab50839847009f7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown
+    second: {fileID: 2100000, guid: a85215bb73bd9304abc652aed3ec56bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Character_FireFighter_Polygon_City_Characters_Mat_01_A
+    second: {fileID: 2100000, guid: 895b92a1c58f3164d8d5bf109b0ac79c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: d9a9586875c1bf04a8208a71ba6ed8ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green
+    second: {fileID: 2100000, guid: 66987ff15a230174389bac61a4201c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: 91b218d788b310d4eb9a137162b2718d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 37ad118f010c36147a8228789e4971bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 348d5c66ef919474890ef81a1061e914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.5
+    second: {fileID: 2100000, guid: a45f0a1fbb2c5da4fb2792b50b3e994b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.6
+    second: {fileID: 2100000, guid: d336b9b33b3e9cd4da80f95cb35dcee3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 9c2cde39f29a33b4db59f3f49f9a6035, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pink Light
+    second: {fileID: 2100000, guid: 164a45e631962a14e8027e6d00a56bcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: World ap
+    second: {fileID: 2100000, guid: e04ab2022368d5a4087506400572ea3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brownDark
+    second: {fileID: 2100000, guid: 91828aacd2dfc1d47b58b4aadec071c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass
+    second: {fileID: 2100000, guid: 45c9a283ec751d64c925dc7abd0097e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: 27c39374f0bff254192cef72b3a7b978, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greyLight
+    second: {fileID: 2100000, guid: 4b46732d95894444088126bf0913d9d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: road
+    second: {fileID: 2100000, guid: cccbe45730525d445982b0e9a2d3f053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 684b1660a4aa3a74fae795d6a328fa9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: d5b8424e7aa372a4e9c426d828ae0cc4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Character_FireFighter_Polygon_City_Characters_Mat_01_A_MainTex
+    second: {fileID: 2800000, guid: 7316f8359cc6cbf4fabc5825761d522a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Palette
+    second: {fileID: 2800000, guid: 7a670bc4249e9ce4cad7029180f618e5, type: 3}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: drunk-scene-collected(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plane
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 43.7109, y: -0.7129931, z: -8.490605}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_straight_1
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 66.291016, y: -0.31597123, z: -22.421797}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Symmetry_1
+      parentName: road_straight_1
+      position: {x: 3.4585946, y: 0.31597123, z: 3.2070498}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cloner
+      parentName: Symmetry_1
+      position: {x: -2.1, y: -0.19999999, z: 2.919942}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_0
+      parentName: Cloner
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1
+      parentName: Cloner
+      position: {x: 2.2737367e-15, y: 0, z: -2.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2
+      parentName: Cloner
+      position: {x: 2.2737367e-15, y: 0, z: -5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3
+      parentName: Cloner
+      position: {x: 2.2737367e-15, y: 0, z: -7.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4
+      parentName: Cloner
+      position: {x: 4.5474734e-15, y: 0, z: -10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_5
+      parentName: Cloner
+      position: {x: 4.5474734e-15, y: 0, z: -12.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_6
+      parentName: Cloner
+      position: {x: 4.5474734e-15, y: 0, z: -15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_7
+      parentName: Cloner
+      position: {x: 6.82121e-15, y: 0, z: -17.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_8
+      parentName: Cloner
+      position: {x: 4.5474734e-15, y: 0, z: -20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_9
+      parentName: Cloner
+      position: {x: 4.5474734e-15, y: 0, z: -22.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadStraight_1
+      parentName: road_straight_1
+      position: {x: 3.2070498, y: -0.31597123, z: 3.2070498}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_straight
+      parentName: drunk-scene-collected(Clone)
+      position: {x: -0.12577228, y: -0.31597123, z: 7.701331e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Symmetry_1_2
+      parentName: road_straight
+      position: {x: 0.12577228, y: 0.31597123, z: -7.701331e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cloner_2
+      parentName: Symmetry_1_2
+      position: {x: -2.1, y: -0.19999999, z: 2.919942}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_0_2
+      parentName: Cloner_2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1_2
+      parentName: Cloner_2
+      position: {x: 5.684342e-16, y: 0, z: -2.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_2
+      parentName: Cloner_2
+      position: {x: 5.684342e-16, y: 0, z: -5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_2
+      parentName: Cloner_2
+      position: {x: 1.7053025e-15, y: 0, z: -7.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_2
+      parentName: Cloner_2
+      position: {x: 2.2737367e-15, y: 0, z: -10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_5_2
+      parentName: Cloner_2
+      position: {x: 2.8421708e-15, y: 0, z: -12.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_6_2
+      parentName: Cloner_2
+      position: {x: 2.8421708e-15, y: 0, z: -15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_7_2
+      parentName: Cloner_2
+      position: {x: 3.9790393e-15, y: 0, z: -17.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_8_2
+      parentName: Cloner_2
+      position: {x: 4.5474734e-15, y: 0, z: -20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_9_2
+      parentName: Cloner_2
+      position: {x: 5.1159075e-15, y: 0, z: -22.5}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadStraight_1_2
+      parentName: road_straight
+      position: {x: -0.12577228, y: -0.31597123, z: 7.701331e-18}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_ramp_down
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 53.4844, y: 0.4825727, z: -16.018488}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Symmetry_1_3
+      parentName: road_ramp_down
+      position: {x: -34.269222, y: -0.4825727, z: 3.201655}
+      rotation: {x: -2.4651903e-32, y: -4.9303807e-32, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Null
+      parentName: Symmetry_1_3
+      position: {x: 26.724928, y: 0.64330596, z: 2.919942}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_3
+      parentName: Null
+      position: {x: 4.7490296, y: 1.6200964, z: -4.5474734e-15}
+      rotation: {x: 0.033106197, y: -0.7063314, z: 0.033106197, w: 0.7063314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_3
+      parentName: Null
+      position: {x: 2.4206128, y: 0.90537924, z: 0}
+      rotation: {x: 0.102852345, y: -0.69958663, z: 0.102852345, w: 0.69958663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_3
+      parentName: Null
+      position: {x: 0.13303016, y: -0.16507547, z: 0}
+      rotation: {x: 0.15248264, y: -0.69047016, z: 0.15248264, w: 0.69047016}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1_3
+      parentName: Null
+      position: {x: -2.3277442, y: -1.0040942, z: 0}
+      rotation: {x: 0.11366571, y: -0.69791126, z: 0.11366571, w: 0.69791126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence
+      parentName: Null
+      position: {x: -4.9749284, y: -1.356306, z: 0}
+      rotation: {x: 0.046928566, y: -0.7055478, z: 0.046928566, w: 0.7055478}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadRampLongCurved
+      parentName: road_ramp_down
+      position: {x: -6.40331, y: 0.4825727, z: 3.201655}
+      rotation: {x: 4.3297806e-17, y: 0.7071068, z: -4.3297806e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_ramp_up
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 21.462605, y: 0.4825727, z: -3.201655}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Symmetry_1_4
+      parentName: road_ramp_up
+      position: {x: -21.462605, y: -0.4825727, z: 3.201655}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Null_2
+      parentName: Symmetry_1_4
+      position: {x: 26.724928, y: 0.64330596, z: 2.919942}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_4
+      parentName: Null_2
+      position: {x: 4.7490296, y: 1.6200964, z: 0}
+      rotation: {x: 0.033106197, y: -0.7063314, z: 0.033106197, w: 0.7063314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_4
+      parentName: Null_2
+      position: {x: 2.4206128, y: 0.90537924, z: 0}
+      rotation: {x: 0.102852345, y: -0.69958663, z: 0.102852345, w: 0.69958663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_4
+      parentName: Null_2
+      position: {x: 0.13303016, y: -0.16507547, z: 0}
+      rotation: {x: 0.15248264, y: -0.69047016, z: 0.15248264, w: 0.69047016}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1_4
+      parentName: Null_2
+      position: {x: -2.3277442, y: -1.0040942, z: 0}
+      rotation: {x: 0.11366571, y: -0.69791126, z: 0.11366571, w: 0.69791126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_5
+      parentName: Null_2
+      position: {x: -4.9749284, y: -1.356306, z: 0}
+      rotation: {x: 0.046928566, y: -0.7055478, z: 0.046928566, w: 0.7055478}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadRampLongCurved_2
+      parentName: road_ramp_up
+      position: {x: 6.40331, y: 0.4825727, z: 3.201655}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_left_curve
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 40.672077, y: 2.51661, z: -9.612325}
+      rotation: {x: -6.123234e-17, y: 1, z: -6.123234e-17, w: -1.6081226e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_4
+      parentName: road_left_curve
+      position: {x: -6.322523, y: 0.027483718, z: 0.65783894}
+      rotation: {x: 4.0769347e-33, y: -0.32766715, z: 4.012765e-17, w: 0.9447933}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_3
+      parentName: road_left_curve
+      position: {x: -6.537346, y: 0.027483718, z: 1.6648234}
+      rotation: {x: 4.0769347e-33, y: -0.32766715, z: 4.012765e-17, w: 0.9447933}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_2
+      parentName: road_left_curve
+      position: {x: -6.6581845, y: 0.027483718, z: 2.524117}
+      rotation: {x: 0, y: 0, z: 4.958081e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_1
+      parentName: road_left_curve
+      position: {x: -0.38802782, y: 0.027483718, z: 0.7652507}
+      rotation: {x: 0, y: 0, z: 4.958081e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2
+      parentName: road_left_curve
+      position: {x: -0.45516014, y: 0.027483718, z: 1.8662204}
+      rotation: {x: 0, y: 0, z: 4.958081e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_9_3
+      parentName: road_left_curve
+      position: {x: -8.490532, y: -0.01220775, z: 5.041111}
+      rotation: {x: -0.000000005955821, y: -0.334756, z: 0.000000005790943, w: 0.94230485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_8_3
+      parentName: road_left_curve
+      position: {x: -10.6730585, y: -0.01220775, z: 6.3090734}
+      rotation: {x: -0.00000000523011, y: -0.49637023, z: 0.000000009147035, w: 0.86811095}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_7_3
+      parentName: road_left_curve
+      position: {x: -13.13532, y: -0.01220775, z: 6.700523}
+      rotation: {x: 6.887414e-32, y: -0.6492272, z: 7.95074e-17, w: 0.76059455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_6_3
+      parentName: road_left_curve
+      position: {x: -1.2297713, y: -0.012207812, z: 4.835223}
+      rotation: {x: -0.0000000060051493, y: -0.14107783, z: -8.5575225e-10, w: 0.9899985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_5_3
+      parentName: road_left_curve
+      position: {x: -2.42886, y: -0.012207781, z: 7.0241218}
+      rotation: {x: -0.000000006018905, y: -0.24796401, z: -0.0000000015405854, w: 0.96876925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_5
+      parentName: road_left_curve
+      position: {x: -4.050436, y: -0.0122077605, z: 8.911743}
+      rotation: {x: -0.000000007524857, y: -0.3474634, z: 0.000000008448495, w: 0.93769354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_5
+      parentName: road_left_curve
+      position: {x: -5.995493, y: -0.01220775, z: 10.465107}
+      rotation: {x: -0.0000000065492456, y: -0.4335677, z: 0.0000000085417735, w: 0.901121}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_6
+      parentName: road_left_curve
+      position: {x: -8.23291, y: -0.01220775, z: 11.584049}
+      rotation: {x: -0.0000000055391047, y: -0.52569574, z: 0.000000008963293, w: 0.85067266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1_5
+      parentName: road_left_curve
+      position: {x: -10.626052, y: -0.01220775, z: 12.303681}
+      rotation: {x: -6.1438817e-32, y: -0.5966706, z: 7.307108e-17, w: 0.80248624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_6
+      parentName: road_left_curve
+      position: {x: -13.134988, y: -0.01220775, z: 12.554565}
+      rotation: {x: -4.9872264e-32, y: -0.67100674, z: 8.2174623e-17, w: 0.74145126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadCornerLarge
+      parentName: road_left_curve
+      position: {x: -12.8123255, y: -0.015340985, z: 12.8123255}
+      rotation: {x: -4.3297806e-17, y: 0.7071068, z: 4.3297806e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: road_right_curve
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 40.130054, y: 2.51661, z: -2.986089}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_4_2
+      parentName: road_right_curve
+      position: {x: 0.62566364, y: 0.027483718, z: -5.968397}
+      rotation: {x: 0, y: -0.32766715, z: -0, w: 0.9447933}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_3_2
+      parentName: road_right_curve
+      position: {x: 0.4108403, y: 0.027483718, z: -4.9614124}
+      rotation: {x: 0, y: -0.32766715, z: -0, w: 0.9447933}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_2_2
+      parentName: road_right_curve
+      position: {x: 0.29000217, y: 0.027483718, z: -4.102119}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_1_2
+      parentName: road_right_curve
+      position: {x: 6.5601587, y: 0.027483718, z: -5.860985}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_2_3
+      parentName: road_right_curve
+      position: {x: 6.4930267, y: 0.027483718, z: -4.7600155}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_9_4
+      parentName: road_right_curve
+      position: {x: -1.5423453, y: -0.01220775, z: -1.5851247}
+      rotation: {x: -0.000000005955821, y: -0.334756, z: 0.000000005790943, w: 0.94230485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_8_4
+      parentName: road_right_curve
+      position: {x: -3.724872, y: -0.01220775, z: -0.31716236}
+      rotation: {x: -0.00000000523011, y: -0.49637023, z: 0.000000009147035, w: 0.86811095}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_7_4
+      parentName: road_right_curve
+      position: {x: -6.187133, y: -0.01220775, z: 0.07428739}
+      rotation: {x: 0, y: -0.6492272, z: -0, w: 0.76059455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_6_4
+      parentName: road_right_curve
+      position: {x: 5.7184153, y: -0.012207812, z: -1.7910129}
+      rotation: {x: -0.0000000060051493, y: -0.14107783, z: -8.5575225e-10, w: 0.9899985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_5_4
+      parentName: road_right_curve
+      position: {x: 4.5193267, y: -0.012207781, z: 0.39788562}
+      rotation: {x: -0.000000006018905, y: -0.24796401, z: -0.0000000015405855, w: 0.96876925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_6
+      parentName: road_right_curve
+      position: {x: 2.8977509, y: -0.0122077605, z: 2.285507}
+      rotation: {x: -0.000000007524857, y: -0.3474634, z: 0.000000008448495, w: 0.93769354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_3_7
+      parentName: road_right_curve
+      position: {x: 0.9526935, y: -0.01220775, z: 3.8388717}
+      rotation: {x: -0.000000006549245, y: -0.4335677, z: 0.0000000085417735, w: 0.901121}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_2_7
+      parentName: road_right_curve
+      position: {x: -1.2847238, y: -0.01220775, z: 4.957813}
+      rotation: {x: -0.0000000055391047, y: -0.52569574, z: 0.000000008963293, w: 0.85067266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_1_6
+      parentName: road_right_curve
+      position: {x: -3.6778648, y: -0.01220775, z: 5.6774454}
+      rotation: {x: 0, y: -0.5966706, z: -0, w: 0.80248624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fence_4_7
+      parentName: road_right_curve
+      position: {x: -6.186801, y: -0.01220775, z: 5.9283295}
+      rotation: {x: 0, y: -0.67100674, z: -0, w: 0.74145126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: roadCornerLarge_2
+      parentName: road_right_curve
+      position: {x: -5.864138, y: -0.015340985, z: 6.1860886}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beer_mug
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 92.241066, y: 1.9191083, z: -19.26742}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: door_r
+      parentName: Beer_mug
+      position: {x: -1.0940173, y: -2.5013077, z: -2.5209365}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: door_l
+      parentName: Beer_mug
+      position: {x: -1.0940173, y: -2.5013077, z: 2.0273223}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: banner
+      parentName: Beer_mug
+      position: {x: -0.9728618, y: 2.6744895, z: -0.2686254}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mug
+      parentName: Beer_mug
+      position: {x: 3.1608965, y: 2.328126, z: 0.7622398}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Block_2
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 83.10911, y: 0.082874924, z: -25.958107}
+      rotation: {x: -0, y: 0.70710677, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lights
+      parentName: Block_2
+      position: {x: 1.5277236, y: -0.44680437, z: -1.3783877}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light
+      parentName: Lights
+      position: {x: -4.7459855, y: 0.6693381, z: -2.5617812}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3
+      parentName: Lights
+      position: {x: -4.038415, y: -0.1434028, z: 3.820621}
+      rotation: {x: 9.039071e-10, y: -0.70710665, z: 9.0390684e-10, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2
+      parentName: Lights
+      position: {x: 0.82277167, y: -0.1434029, z: 3.820621}
+      rotation: {x: 9.039071e-10, y: -0.70710665, z: 9.0390684e-10, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_1
+      parentName: Lights
+      position: {x: -4.038415, y: -0.14340295, z: -2.5703955}
+      rotation: {x: -9.03907e-10, y: 0.70710677, z: 9.0390695e-10, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light
+      parentName: Lights
+      position: {x: 0.8227716, y: -0.14340274, z: -2.5703955}
+      rotation: {x: -9.03907e-10, y: 0.70710677, z: 9.0390695e-10, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light_1
+      parentName: Lights
+      position: {x: 1.6049173, y: 0.6693382, z: -2.5617807}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light_2
+      parentName: Lights
+      position: {x: -4.745986, y: 0.66933835, z: 3.7960713}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base_1
+      parentName: Block_2
+      position: {x: -0.019014003, y: -0.22362025, z: -0.742372}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_4
+      parentName: Base_1
+      position: {x: 0.0000000012707869, y: -0.028427059, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor
+      parentName: Base_1
+      position: {x: -0.0000000012707869, y: 0.028427059, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes
+      parentName: Block_2
+      position: {x: 1.9420205, y: -0.41068438, z: -0.3150553}
+      rotation: {x: 1.4791142e-31, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bed
+      parentName: Bushes
+      position: {x: -0.031416006, y: -0.17392655, z: -0.42033067}
+      rotation: {x: 1.0930448e-15, y: 1, z: 0.00000002235174, w: -0.00000004616251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_3
+      parentName: Bushes
+      position: {x: 0.01047197, y: 0.057975516, z: -1.8350408}
+      rotation: {x: -0.47741055, y: 0.5060095, z: -0.39797384, w: 0.59803873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_1
+      parentName: Block_2
+      position: {x: -2.631436, y: -0.41068438, z: -0.31505504}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bed_2
+      parentName: Bushes_1
+      position: {x: -0.031416006, y: -0.17392655, z: -0.42033067}
+      rotation: {x: 9.7058e-16, y: 1, z: 0.00000002235174, w: -0.00000004616251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_3_2
+      parentName: Bushes_1
+      position: {x: 0.01047197, y: 0.057975516, z: -1.8350408}
+      rotation: {x: -0.47741055, y: 0.5060095, z: -0.39797384, w: 0.59803873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House
+      parentName: Block_2
+      position: {x: -0.0000037012467, y: 1.0449888, z: 1.4357933}
+      rotation: {x: 0.7071068, y: -0.000000026341782, z: 0.000000026341782, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Block_1
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 79.6425, y: -0.343339, z: -12.55053}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Muff_1
+      parentName: Block_1
+      position: {x: -1.1152333, y: 0.20053008, z: 0.8904898}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Muff
+      parentName: Block_1
+      position: {x: -1.1152333, y: 0.20053008, z: 1.8891305}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lights_3
+      parentName: Block_1
+      position: {x: 2.0153298, y: -0.098173484, z: -0.54040647}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_3
+      parentName: Lights_3
+      position: {x: -3.4230673, y: -0.1434026, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_4
+      parentName: Lights_3
+      position: {x: 0.8227716, y: -0.14340293, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_1_3
+      parentName: Lights_3
+      position: {x: -3.4230673, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_4
+      parentName: Lights_3
+      position: {x: 0.8227716, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_4
+      parentName: Lights_3
+      position: {x: -4.5632725, y: -0.1434026, z: 0.37561646}
+      rotation: {x: 0.000000022351742, y: 1, z: 0.000000021073426, w: 0.000000041483077}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_5
+      parentName: Lights_3
+      position: {x: -4.5632725, y: -0.1434026, z: 10.348434}
+      rotation: {x: 0.000000022351742, y: 1, z: 0.000000021073426, w: 0.000000041483077}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base_2
+      parentName: Block_1
+      position: {x: 0.6616219, y: 0.12501073, z: 0.07296111}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_4_3
+      parentName: Base_2
+      position: {x: -0, y: -0.008574907, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_3
+      parentName: Base_2
+      position: {x: -0, y: 0.048279215, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Trees_2
+      parentName: Block_1
+      position: {x: 3.054674, y: -0.3601239, z: 0.028684186}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_47_2
+      parentName: Trees_2
+      position: {x: 0.093224935, y: -0.17955023, z: 1.9555067}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_3_2
+      parentName: Trees_2
+      position: {x: -0.08993612, y: 0.093294844, z: 1.1213508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_3_3
+      parentName: Trees_2
+      position: {x: -0.04295295, y: 0.010836269, z: 0.316032}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_1_2
+      parentName: Trees_2
+      position: {x: 0.0961407, y: -0.112454355, z: -0.4504547}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_3
+      parentName: Trees_2
+      position: {x: 0.030459056, y: -0.119599834, z: -1.3305637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_7_2
+      parentName: Trees_2
+      position: {x: 0.18898706, y: 0.13995558, z: -0.01577735}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_4_2
+      parentName: Trees_2
+      position: {x: -0.08208221, y: -0.007818032, z: -2.2708113}
+      rotation: {x: 0, y: -0.39639783, z: -0, w: 0.91807884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bench_2
+      parentName: Block_1
+      position: {x: 1.869155, y: -0.1965213, z: -2.3034256}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Behch
+      parentName: Block_1
+      position: {x: 1.869155, y: -0.1965213, z: -1.520117}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House_3
+      parentName: Block_1
+      position: {x: 0.8228498, y: 0.059581596, z: -0.23080222}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 18
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 71.16176, y: 2.9872732, z: -9.517595}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House_2
+      parentName: 18
+      position: {x: -0, y: -1.1061792, z: -0.9071078}
+      rotation: {x: -2.4651903e-32, y: -4.9303807e-32, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Door
+      parentName: 18
+      position: {x: -0, y: -2.1687183, z: 2.077577}
+      rotation: {x: -2.4651903e-32, y: -4.9303807e-32, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows
+      parentName: 18
+      position: {x: -1.1636447, y: -2.2351089, z: 3.2066553}
+      rotation: {x: -4.3297806e-17, y: -4.3297806e-17, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_1
+      parentName: Windows
+      position: {x: -0.23507574, y: -1.2561353, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_2
+      parentName: Windows
+      position: {x: -0.23507574, y: 3.5834246, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_4
+      parentName: Windows
+      position: {x: -0.23507574, y: 5.377222, z: -4.6569657}
+      rotation: {x: -0.7071068, y: 0, z: -1.5700926e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_5
+      parentName: Windows
+      position: {x: -0.23507574, y: 5.377222, z: -6.1855774}
+      rotation: {x: -0.7071068, y: 0, z: -1.5700926e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_9
+      parentName: Windows
+      position: {x: -2.4931438, y: 5.377222, z: -4.6569657}
+      rotation: {x: -0.7071068, y: 0, z: -1.5700926e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_10
+      parentName: Windows
+      position: {x: -2.4931438, y: 5.377222, z: -6.1855774}
+      rotation: {x: -0.7071068, y: 0, z: -1.5700926e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_11
+      parentName: Windows
+      position: {x: -0.23507574, y: -3.0682497, z: -4.6569657}
+      rotation: {x: 0.7071068, y: -3.9252314e-17, z: 3.9252314e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_12
+      parentName: Windows
+      position: {x: -0.23507574, y: -3.0682497, z: -6.1855774}
+      rotation: {x: 0.7071068, y: -3.9252314e-17, z: 3.9252314e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_13
+      parentName: Windows
+      position: {x: -2.4931438, y: -3.0682497, z: -4.6569657}
+      rotation: {x: 0.7071068, y: -3.9252314e-17, z: 3.9252314e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_14
+      parentName: Windows
+      position: {x: -2.4931438, y: -3.0682497, z: -6.1855774}
+      rotation: {x: 0.7071068, y: -3.9252314e-17, z: 3.9252314e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_2_2
+      parentName: Windows
+      position: {x: -2.491119, y: -1.2561353, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_3
+      parentName: Windows
+      position: {x: -2.491119, y: 3.5834246, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_6
+      parentName: Windows
+      position: {x: -2.491119, y: 1.0685359, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_7
+      parentName: Windows
+      position: {x: -2.491119, y: 0.32979935, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Windows_8
+      parentName: Windows
+      position: {x: -2.491119, y: 1.8072724, z: -0.5905887}
+      rotation: {x: -0, y: -3.8110772e-33, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Roof
+      parentName: 18
+      position: {x: -0, y: 2.593557, z: -0.9071078}
+      rotation: {x: -2.4651903e-32, y: -4.9303807e-32, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Staircase
+      parentName: 18
+      position: {x: -0, y: -2.9243743, z: 2.7490113}
+      rotation: {x: -2.4651903e-32, y: -4.9303807e-32, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_4
+      parentName: Staircase
+      position: {x: 1.6673976, y: 0.5010652, z: 0.2913506}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_5
+      parentName: Staircase
+      position: {x: 1.667782, y: -0.11425682, z: 0.021471536}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_6
+      parentName: Staircase
+      position: {x: 1.667782, y: -0.11425682, z: 0.5651261}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_7
+      parentName: Staircase
+      position: {x: -1.6595874, y: 0.5010652, z: 0.2913506}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_8
+      parentName: Staircase
+      position: {x: -1.659203, y: -0.11425682, z: 0.021471536}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_9
+      parentName: Staircase
+      position: {x: -1.659203, y: -0.11425682, z: 0.5651261}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_10
+      parentName: Staircase
+      position: {x: -0, y: -0.11121723, z: 0.674944}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_12
+      parentName: Staircase
+      position: {x: -0, y: -0.22211914, z: 0.8759837}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_13
+      parentName: Staircase
+      position: {x: -0, y: -0.33277348, z: 1.0350688}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_14
+      parentName: Staircase
+      position: {x: -0, y: -0.4432864, z: 1.1844193}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_15
+      parentName: Staircase
+      position: {x: -0, y: -0.5534433, z: 1.3166773}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_16
+      parentName: Staircase
+      position: {x: -0, y: -0.6635682, z: 1.4546771}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_11
+      parentName: Staircase
+      position: {x: 0.9607223, y: -0.22666457, z: 1.1963879}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_17
+      parentName: Staircase
+      position: {x: -0.96025586, y: -0.22666457, z: 1.1963879}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: Staircase
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -4.827153e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Building02
+      parentName: drunk-scene-collected(Clone)
+      position: {x: 71.56363, y: 2.6928396, z: -26.78342}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Basket
+      parentName: Building02
+      position: {x: 1.1855863, y: 0.8933545, z: -1.0831391}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Basket_1
+      parentName: Building02
+      position: {x: -0.5563375, y: 0.8933545, z: -1.0831391}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Basket_2
+      parentName: Building02
+      position: {x: 1.1855863, y: 0.8933545, z: 1.126817}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Basket_3
+      parentName: Building02
+      position: {x: -0.5563375, y: 0.8933545, z: 1.126817}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Antena
+      parentName: Building02
+      position: {x: -1.9011463, y: 3.115664, z: -2.131424}
+      rotation: {x: 0.38673759, y: 0.8857662, z: 0.10268194, w: 0.23517801}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_1
+      parentName: Antena
+      position: {x: -0.24175443, y: -0.37384304, z: -0.030845601}
+      rotation: {x: 0.38673759, y: 0.8857662, z: 0.102681935, w: -0.23517801}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere_1
+      parentName: Antena
+      position: {x: 0.000000004583553, y: 0.21750492, z: -3.6379787e-14}
+      rotation: {x: 1, y: 0.000000043443976, z: 0.000000010536712, w: 4.916541e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere
+      parentName: Antena
+      position: {x: 0.0000000017628917, y: 0.08365394, z: -5.456968e-14}
+      rotation: {x: 1, y: 0.00000004371139, z: 0.000000010536712, w: 4.888364e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder
+      parentName: Antena
+      position: {x: -0.052083, y: -0.011231272, z: 0.00023735398}
+      rotation: {x: 0.11916288, y: 0.99287474, z: 0.0000000012555845, w: 0.000000010461635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_2
+      parentName: Antena
+      position: {x: 0.057983886, y: -0.02186974, z: 0.047302056}
+      rotation: {x: -0.040756106, y: -0.33958316, z: 0.11197646, w: 0.93299705}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_3
+      parentName: Antena
+      position: {x: 0.04478412, y: -0.017706858, z: -0.050463125}
+      rotation: {x: 0.050360408, y: 0.41960698, z: 0.10799823, w: 0.8998501}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_4_2
+      parentName: Building02
+      position: {x: -2.6330495, y: -0.39999261, z: -0.101158425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_3
+      parentName: Building02
+      position: {x: -0.8315752, y: -0.40890503, z: -0.101158425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_9_2
+      parentName: Building02
+      position: {x: 5.025384, y: -2.3135228, z: -0.101158425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_5_2
+      parentName: Building02
+      position: {x: 3.6297948, y: -1.3088033, z: -0.101158425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_8_2
+      parentName: Building02
+      position: {x: -0.89595467, y: -0.29473907, z: 3.0129092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_7_2_2
+      parentName: Building02
+      position: {x: -0.88459754, y: -0.18708433, z: 2.6866918}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_6_2
+      parentName: Building02
+      position: {x: -4.776826, y: -0.873468, z: -0.52576476}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Door_2
+      parentName: Building02
+      position: {x: 0.41675603, y: -2.4223988, z: 2.3348753}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Door_1
+      parentName: Building02
+      position: {x: -2.5289874, y: -2.422268, z: 2.3348753}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: window1
+      parentName: Building02
+      position: {x: -2.2958815, y: -0.19591689, z: 2.3633444}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: window1_1
+      parentName: window1
+      position: {x: 0.8394597, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: window1_2
+      parentName: window1
+      position: {x: 1.7180215, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_2
+      parentName: Building02
+      position: {x: -0, y: -3.2804532, z: -0.101158425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character_FireFighter
+      parentName: drunk-scene-collected(Clone)
+      position: {x: -5.724811e-16, y: -0.6008633, z: -1.4952874}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: buildings
+      parentName: drunk-scene-collected(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Null_3
+      parentName: buildings
+      position: {x: 6.025, y: -0.049999997, z: 5.2139916}
+      rotation: {x: -0.09447499, y: -0, z: 0.5183911, w: 0.84990895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Block_1_2
+      parentName: Null_3
+      position: {x: 10.875, y: 0.049999997, z: 1.1912422}
+      rotation: {x: -0.09344802, y: -0.010526746, z: -0.34658223, w: 0.9332938}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Muff_1_2
+      parentName: Block_1_2
+      position: {x: -1.1152333, y: 0.20053008, z: 0.8904898}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Muff_2
+      parentName: Block_1_2
+      position: {x: -1.1152333, y: 0.20053008, z: 1.8891305}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lights_3_2
+      parentName: Block_1_2
+      position: {x: 2.0153298, y: -0.098173484, z: -0.54040647}
+      rotation: {x: 0.24158803, y: 0.6709439, z: -0.02684302, w: 0.7005348}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_3_2
+      parentName: Lights_3_2
+      position: {x: -3.4230673, y: -0.1434026, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_4_2
+      parentName: Lights_3_2
+      position: {x: 0.8227716, y: -0.14340293, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_1_3_2
+      parentName: Lights_3_2
+      position: {x: -3.4230673, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_4_2
+      parentName: Lights_3_2
+      position: {x: 0.8227716, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_4_2
+      parentName: Lights_3_2
+      position: {x: -4.5632725, y: -0.1434026, z: 0.37561646}
+      rotation: {x: 0.000000022351742, y: 1, z: 0.000000021073426, w: 0.000000041483077}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_5_2
+      parentName: Lights_3_2
+      position: {x: -4.5632725, y: -0.1434026, z: 10.348434}
+      rotation: {x: 0.000000022351742, y: 1, z: 0.000000021073426, w: 0.000000041483077}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base_2_2
+      parentName: Block_1_2
+      position: {x: 0.6616219, y: 0.12501073, z: 0.07296111}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_4_3_2
+      parentName: Base_2_2
+      position: {x: -0, y: -0.008574907, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_3_2
+      parentName: Base_2_2
+      position: {x: -0, y: 0.048279215, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Trees_2_2
+      parentName: Block_1_2
+      position: {x: 3.054674, y: -0.3601239, z: 0.028684186}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_47_2_2
+      parentName: Trees_2_2
+      position: {x: 0.093224935, y: -0.17955023, z: 1.9555067}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_3_2_2
+      parentName: Trees_2_2
+      position: {x: -0.08993612, y: 0.093294844, z: 1.1213508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_2_4_3
+      parentName: Trees_2_2
+      position: {x: -0.04295295, y: 0.010836269, z: 0.316032}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_1_2_2
+      parentName: Trees_2_2
+      position: {x: 0.0961407, y: -0.112454355, z: -0.4504547}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2_3_2
+      parentName: Trees_2_2
+      position: {x: 0.030459056, y: -0.119599834, z: -1.3305637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_7_2_3
+      parentName: Trees_2_2
+      position: {x: 0.18898706, y: 0.13995558, z: -0.01577735}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_4_2_2
+      parentName: Trees_2_2
+      position: {x: -0.08208221, y: -0.007818032, z: -2.2708113}
+      rotation: {x: 0, y: -0.39639783, z: -0, w: 0.91807884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bench_2_2
+      parentName: Block_1_2
+      position: {x: 1.869155, y: -0.1965213, z: -2.3034256}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Behch_2
+      parentName: Block_1_2
+      position: {x: 1.869155, y: -0.1965213, z: -1.520117}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House_3_2
+      parentName: Block_1_2
+      position: {x: 0.8228498, y: 0.059581596, z: -0.23080222}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Block_2_2
+      parentName: Null_3
+      position: {x: -6.025, y: 0.049999997, z: 0.50595015}
+      rotation: {x: 0.38648957, y: 0.85894614, z: -0.3131932, w: 0.12143871}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lights_2
+      parentName: Block_2_2
+      position: {x: 1.5277237, y: -0.44680437, z: -1.3783876}
+      rotation: {x: -0.03522206, y: -0.13742219, z: -0.05797162, w: 0.98818713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light_2_2
+      parentName: Lights_2
+      position: {x: -4.7459855, y: 0.6693381, z: -2.5617816}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_2
+      parentName: Lights_2
+      position: {x: -4.0384154, y: -0.1434028, z: 3.8206203}
+      rotation: {x: 9.0390717e-10, y: -0.70710665, z: 9.039069e-10, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_2
+      parentName: Lights_2
+      position: {x: 0.8227712, y: -0.1434029, z: 3.820621}
+      rotation: {x: 9.0390717e-10, y: -0.70710665, z: 9.039069e-10, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_1_2
+      parentName: Lights_2
+      position: {x: -4.038415, y: -0.14340295, z: -2.5703957}
+      rotation: {x: -9.03907e-10, y: 0.70710677, z: 9.0390695e-10, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_3
+      parentName: Lights_2
+      position: {x: 0.8227719, y: -0.14340274, z: -2.5703952}
+      rotation: {x: -9.03907e-10, y: 0.70710677, z: 9.0390695e-10, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light_1_2
+      parentName: Lights_2
+      position: {x: 1.6049175, y: 0.6693382, z: -2.5617805}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: traffic_light_2_3
+      parentName: Lights_2
+      position: {x: -4.7459865, y: 0.66933835, z: 3.7960708}
+      rotation: {x: -0.0000000018663084, y: 0.70710677, z: 0.0000000018663082, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base_1_2
+      parentName: Block_2_2
+      position: {x: -0.019013911, y: -0.22362025, z: -0.742372}
+      rotation: {x: -0, y: 6.617445e-24, z: 2.6304434e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_4_2
+      parentName: Base_1_2
+      position: {x: 0.0000000012707884, y: -0.028427059, z: 0}
+      rotation: {x: 0, y: 0, z: 1.495639e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_2
+      parentName: Base_1_2
+      position: {x: -0.0000000012707889, y: 0.028427059, z: 0}
+      rotation: {x: 0, y: 0, z: 1.495639e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_2
+      parentName: Block_2_2
+      position: {x: 1.9420205, y: -0.41068438, z: -0.31505507}
+      rotation: {x: -0, y: 6.617445e-24, z: 2.6304426e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bed_2_2
+      parentName: Bushes_2
+      position: {x: -0.031415954, y: -0.17392655, z: -0.42033067}
+      rotation: {x: -1.0930447e-15, y: 1, z: 0.00000002235174, w: 0.00000004616251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_3_2_2
+      parentName: Bushes_2
+      position: {x: 0.010472195, y: 0.057975516, z: -1.8350408}
+      rotation: {x: -0.47741053, y: 0.50600946, z: -0.39797387, w: 0.5980388}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_1_2
+      parentName: Block_2_2
+      position: {x: -2.631436, y: -0.41068438, z: -0.31505537}
+      rotation: {x: -0, y: 6.617445e-24, z: 2.6304434e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bed_2_3
+      parentName: Bushes_1_2
+      position: {x: -0.031415954, y: -0.17392655, z: -0.42033067}
+      rotation: {x: -1.0930447e-15, y: 1, z: 0.00000002235174, w: 0.00000004616251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bushes_3_2_3
+      parentName: Bushes_1_2
+      position: {x: 0.010472195, y: 0.057975516, z: -1.8350408}
+      rotation: {x: -0.47741053, y: 0.50600946, z: -0.39797387, w: 0.5980388}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House_3_3
+      parentName: Block_2_2
+      position: {x: -0.0000038776743, y: 1.0449888, z: 1.4357933}
+      rotation: {x: 0.7071068, y: 0.000000026341782, z: -0.000000026341782, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Block_4
+      parentName: Null_3
+      position: {x: 3.2749999, y: 0.049999997, z: 0.5968573}
+      rotation: {x: -0.07652322, y: -0.43877295, z: 0.16200459, w: 0.8805549}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bench_1
+      parentName: Block_4
+      position: {x: -1.3812872, y: -0.1965213, z: 0.19719945}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: House_2_2
+      parentName: Block_4
+      position: {x: -1.3158216, y: -0.4796152, z: 1.2188463}
+      rotation: {x: -0, y: 0.70710677, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lights_2_2
+      parentName: Block_4
+      position: {x: 2.0153298, y: -0.098173484, z: -0.54040647}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_3_2_2
+      parentName: Lights_2_2
+      position: {x: -3.4230673, y: -0.1434026, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_2_2
+      parentName: Lights_2_2
+      position: {x: 0.8227716, y: -0.14340293, z: 3.820621}
+      rotation: {x: -0.000000014901161, y: -0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_1_2_2
+      parentName: Lights_2_2
+      position: {x: -3.4230673, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Light_2_3_2
+      parentName: Lights_2_2
+      position: {x: 0.8227716, y: -0.14340277, z: -2.6232622}
+      rotation: {x: 0.000000014901161, y: 0.70710677, z: -0.00000001490116, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Base
+      parentName: Block_4
+      position: {x: 0.6616219, y: 0.12501073, z: 0.07296111}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_4_2_2
+      parentName: Base
+      position: {x: -0, y: -0.008574907, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Floor_2_2
+      parentName: Base
+      position: {x: -0, y: 0.048279215, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Trees
+      parentName: Block_4
+      position: {x: 0.73047286, y: -0.3601238, z: -2.295517}
+      rotation: {x: -0, y: 0.70710677, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_47
+      parentName: Trees
+      position: {x: 0.093225144, y: -0.17955023, z: 1.9555067}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_3
+      parentName: Trees
+      position: {x: -0.089936, y: 0.093294844, z: 1.1213508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_2
+      parentName: Trees
+      position: {x: -0.042952918, y: 0.010836267, z: 0.316032}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_1
+      parentName: Trees
+      position: {x: 0.09614066, y: -0.112454355, z: -0.4504547}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree
+      parentName: Trees
+      position: {x: 0.03045892, y: -0.11959983, z: -1.3305637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube_7_3
+      parentName: Trees
+      position: {x: 0.198409, y: 0.13995558, z: -0.08476448}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firtree_4
+      parentName: Trees
+      position: {x: -0.08208246, y: -0.007818036, z: -2.2708113}
+      rotation: {x: 0.000000009820514, y: -0.3963978, z: 0.000000018296484, w: 0.9180789}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bench
+      parentName: Block_4
+      position: {x: -1.3812872, y: -0.1965213, z: -1.0969647}
+      rotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
