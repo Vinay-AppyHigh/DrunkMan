@@ -1,3 +1,5 @@
+using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +11,7 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
         private IBzThirdPerson _character;
         private IBzRagdoll _ragdoll;
         private IBzDamageable _health;
-        private Transform _camTransform;
+        public Transform _camTransform;
         private bool _jumpPressed;
         private bool _fire;
         private bool _crouch;
@@ -24,6 +26,7 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
             _character = GetComponent<IBzThirdPerson>();
             _health = GetComponent<IBzDamageable>();
             _ragdoll = GetComponent<IBzRagdoll>();
+            StartCoroutine(MoveDrunkGuyRandomly());
         }
 
         void Update()
@@ -39,16 +42,22 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
         }
 
         public Slider Slider;
+        private float value;
 
         public float TakeUserControls()
         {
             return Slider.value;
         }
 
-        private float MoveDrunkGuyRandomly(float value)
+        IEnumerator MoveDrunkGuyRandomly()
         {
-            value = 0;
-            return value;
+            yield return new WaitForSeconds(1f);
+            int smallvalue = Random.Range(-8, 8);
+            // Debug.Log("smallvalue = " + smallvalue);
+            value = (float) smallvalue / 10;
+            StartCoroutine(MoveDrunkGuyRandomly());
+            Debug.Log("value = " + value);
+            // Debug.Log("Coroutine");
         }
 
         private void FixedUpdate()
@@ -58,9 +67,11 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
             float v = 0.25f; //Input.GetAxis("Vertical");
 
             // calculate move direction and magnitude to pass to character
-            Vector3 camForward = new Vector3(_camTransform.forward.x, 0, _camTransform.forward.z).normalized;
+            Vector3
+                camForward = new Vector3(value, 0, _camTransform.forward.z).normalized;
 
 
+            // Debug.Log("Value =" + value);
             Vector3 move = v * camForward + h * _camTransform.right;
             if (move.magnitude > 1)
                 move.Normalize();

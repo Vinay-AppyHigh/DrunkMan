@@ -23,7 +23,7 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 		{
 			base.CharacterEnable(enable);
 			_capsuleCollider.enabled = enable;
-			_rigidbody.isKinematic = !enable;
+			// _rigidbody.isKinematic = !enable;
 			if (enable)
 				_firstAnimatorFrame = true;
 		}
