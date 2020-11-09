@@ -187,11 +187,9 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 		{
 			if (Time.deltaTime < Mathf.Epsilon)
 				return;
-
 			Vector3 deltaPos;
 			Vector3 deltaGravity = Physics.gravity * Time.deltaTime;
 			_airVelocity += deltaGravity;
-
 			if (_onGround)
 			{
 				deltaPos = _animator.deltaPosition;
@@ -209,9 +207,7 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 				deltaPos = new Vector3(0f, deltaPos.y, 0f);
 				_firstAnimatorFrame = false;
 			}
-
 			UpdatePlayerPosition(deltaPos);
-
 			// apply animator rotation
 			transform.rotation *= _animator.deltaRotation;
 			_jumpPressed = false;
