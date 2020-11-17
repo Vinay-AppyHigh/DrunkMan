@@ -1,155 +1,149 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using System.Diagnostics;
+// using UnityEngine;
+// using Debug = UnityEngine.Debug;
+//
+// public class InputHandler : MonoBehaviour
+// {
+//     private float OldPos, NewPos;
+//     public Rigidbody Player_RB;
+//
+//
+//     public float tiltAroundY = 0;
+//     public float smooth = 100f;
+//
+//     void Update()
+//     {
+//         Swipe();
+//     }
+//
+//     public void Swipe()
+//     {
+//         if (Input.touchCount > 0)
+//         {
+//             Touch touch = Input.GetTouch(0);
+//
+//             Vector3 touchpos = Input.GetTouch(0).position;
+//             // Debug.Log("touchpos = " + touchpos);
+//
+//
+//             switch (touch.phase)
+//             {
+//                 case TouchPhase.Began:
+//                     OldPos = Input.GetTouch(0).position.x;
+//                     NewPos = Input.GetTouch(0).position.x;
+//                     break;
+//                 case TouchPhase.Moved:
+//                     Debug.Log("OldPos = " + OldPos);
+//                     Debug.Log("NewPos = " + NewPos);
+//                     NewPos = Input.GetTouch(0).position.x;
+//                     tiltAroundY = NewPos / 100;
+//                     tiltAroundY = tiltAroundY / 2;
+//                     tiltAroundY = tiltAroundY * 10;
+//                     Quaternion target = Quaternion.Euler(0, tiltAroundY, 0);
+//                     //transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+//                     //transform.Rotate(transform.rotation.x, tiltAroundY * smooth * Time.deltaTime, transform.rotation.z);
+//                     
+//                     // Debug.Log("touchpos.x = " + touchpos.x);
+//                     // Debug.Log("TouchPhase.Moved");
+//                     break;
+//                 case TouchPhase.Ended:
+//                     // tiltAroundY = 0f;
+//                     // PlayerMove.m_EulerAngleVelocity = new Vector3(0, 0, 0);
+//                     // Debug.Log("TouchPhase.Ended");
+//                     break;
+//             }
+//         }
+//     }
+//
+//
+//     //---------------------------------------------------------------------------------------------------------
+// }
+
+
 using UnityEngine;
-using Debug = UnityEngine.Debug;
 
 public class InputHandler : MonoBehaviour
 {
-    private float DeltaX, DeltaY;
-    public Rigidbody Player_RB;
-    public PlayerMove PlayerMove;
-    public Vector3 From, To;
-    public float TimeCount = 1.0f;
-
-
-    void Start()
-    {
-        From = Vector3.zero;
-    }
-
-    // void Update()
+    // private CharacterController CharCtrl;
+    //
+    // void Start()
     // {
-    //     // Swipe();
+    //     CharCtrl = this.GetComponent<CharacterController>();
     // }
-
-    // public void Swipe()
+    //
+    // void Update()
     // {
     //     if (Input.touchCount > 0)
     //     {
+    //         // The screen has been touched so store the touch
     //         Touch touch = Input.GetTouch(0);
-    //
-    //         Vector2 touchpos = Camera.main.ScreenToWorldPoint(touch.position);
-    //
-    //
-    //         switch (touch.phase)
+    //         Vector3 touchPosition = Vector3.zero;
+    //         if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
     //         {
-    //             case TouchPhase.Began:
-    //                 DeltaX = touchpos.x - transform.position.x;
-    //                 DeltaY = touchpos.y - transform.position.y;
-    //                 // Debug.Log("DeltaX = " + DeltaX);
-    //                 // Debug.Log("DeltaY = " + DeltaY);
-    //                 break;
-    //             case TouchPhase.Moved:
-    //                 // To = new Vector3(0, (touchpos.x - DeltaX) * 100, 0);
-    //                 // Player_RB.gameObject.transform.rotation = Quaternion.Slerp(From, To, TimeCount);
-    //                 // TimeCount = TimeCount + Time.deltaTime;
+    //             // If the finger is on the screen, move the object smoothly to the touch position
+    //             touchPosition =
+    //                 Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, transform.position.y,
+    //                     transform.position.z));
     //
-    //                 Debug.Log("DeltaX = " + DeltaX);
-    //                 Debug.Log("touchpos.x = " + touchpos.x);
-    //                 PlayerMove.tiltAroundY = (touchpos.x - DeltaX) * 100;
-    //                 // Debug.Log("TouchPhase.Moved");
-    //                 break;
-    //             case TouchPhase.Ended:
-    //                 // PlayerMove.m_EulerAngleVelocity = new Vector3(0, 0, 0);
-    //                 // Debug.Log("TouchPhase.Ended");
-    //                 break;
+    //             // touchPosition.x = transform.position.y;
+    //             // transform.position = Vector3.Lerp(transform.position, touchPosition, 20 * Time.deltaTime);
     //         }
+    //
+    //
+    //         //---------------------------------------------------------------------------------------------------------
+    //         Debug.Log("touchPosition.x " + touchPosition.x);
+    //         Vector3 NextDir = new Vector3(touchPosition.x, 0, 0.05f);
+    //         if (NextDir != Vector3.zero)
+    //             transform.rotation = Quaternion.LookRotation(NextDir);
+    //         CharCtrl.Move(NextDir / 8);
     //     }
     // }
 
 
-    //---------------------------------------------------------------------------------------------------------
+    public FloatingJoystick Joystick;
+    public float movement_Speed;
+    public float rotations_Speed;
+    CharacterController charCtrl;
 
+    public static float xMove, zMove;
 
-    private float rotationSpeed = 0.02F;
-    private float lerpSpeed = 0.02F;
-    private Vector3 theSpeed = Vector3.zero;
-    private Vector3 avgSpeed = Vector3.zero;
-    private bool isDragging = true;
-    private Vector3 targetSpeedX;
-
-    private float movePos;
-
-/*voidStart() {
-isDragging = true;
-}*/
+    //private Vector3 facDir;
+    void Awake()
+    {
+        charCtrl = GetComponent<CharacterController>();
+    }
 
     void Update()
     {
-        if (Input.touchCount == 1)
-        {
-            Touch t = Input.GetTouch(0);
-
-            if (t.phase == TouchPhase.Began)
-            {
-                isDragging = true;
-            }
-
-            if (t.phase == TouchPhase.Moved)
-            {
-                isDragging = true;
-                movePos = t.deltaPosition.x;
-                theSpeed = new Vector3(0, movePos, 0.0F);
-                avgSpeed = Vector3.Lerp(avgSpeed, theSpeed, Time.deltaTime);
-                transform.Rotate(Camera.main.transform.up * theSpeed.y * rotationSpeed, Space.Self);
-                Debug.Log(" $$$$$$$$$$    ");
-            }
-
-//             if (t.phase == TouchPhase.Stationary)
-//             {
-//                 isDragging = false;
-// //theSpeed = avgSpeed;
-//                 float i = Time.deltaTime * lerpSpeed;
-//                 theSpeed = Vector3.Lerp(theSpeed, Vector3.zero, 0.02f);
-//             }
-
-            if (t.phase == TouchPhase.Ended && t.phase == TouchPhase.Canceled)
-            {
-                isDragging = false;
-//theSpeed = avgSpeed;
-                float i = Time.deltaTime * lerpSpeed;
-                theSpeed = Vector3.Lerp(theSpeed, Vector3.zero, 0.02f);
-            }
-        }
-
-        if (Input.touchCount <= 0)
-        {
-            isDragging = false;
-            float i = Time.deltaTime * lerpSpeed;
-            theSpeed = Vector3.Lerp(theSpeed, Vector3.zero, 0.02f);
-        }
-
-
-        // if (Input.GetMouseButton(0))
-        // {
-        //     theSpeed = new Vector3(0, Input.GetAxis("Horizontal"), 0.0F);
-        //     avgSpeed = Vector3.Lerp(avgSpeed, theSpeed, Time.deltaTime * 5);
-        // }
-        // else
-        // {
-        //     if (isDragging)
-        //     {
-        //         theSpeed = avgSpeed;
-        //         isDragging = false;
-        //     }
-        //
-        //     float i = Time.deltaTime * lerpSpeed;
-        //     theSpeed = Vector3.Lerp(theSpeed, Vector3.zero, i);
-        // }
-        //
-        //
-        // // transform.Rotate(Camera.main.transform.right * theSpeed.y * rotationSpeed, Space.World);
-        // transform.Rotate(Camera.main.transform.up * theSpeed.y * rotationSpeed, Space.Self);
-        // print(theSpeed);
+        playerMovmentControler();
+        playerRotationControler();
     }
 
-/*
-voidOnGUI()
-{
-GUI.Label(newRect(10, 10, 500, 20), "isDragging:"+isDragging.ToString());
-GUI.Label(newRect(10, 25, 500, 20), "theSpeed:"+theSpeed.ToString());
-GUI.Label(newRect(10, 50, 500, 20), "AvgSpeed:"+avgSpeed.ToString());
-//GUI.Label(newRect(10, 100, 500, 20), "SwipeSpeed:"+newAngles.ToString());
-}*/
+    // Update is called once per frame
+    void playerMovmentControler()
+    {
+        xMove = Joystick.Horizontal; // + joystek.Horizontal;
+        zMove = Joystick.Vertical; // + joystek.Vertical;
+        float gravity = 9.8f;
+        Vector3 moveAxis = new Vector3(xMove, -gravity, zMove);
+        charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
+    }
+
+    void playerRotationControler()
+    {
+        if (xMove > 0)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right),
+                rotations_Speed * Time.deltaTime);
+        else if (xMove < 0)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left),
+                rotations_Speed * Time.deltaTime);
+        if (zMove > 0)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward),
+                rotations_Speed * Time.deltaTime);
+        else if (zMove < 0)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back),
+                rotations_Speed * Time.deltaTime);
+    }
 }

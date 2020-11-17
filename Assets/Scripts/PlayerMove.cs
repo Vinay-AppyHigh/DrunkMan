@@ -15,6 +15,8 @@ public class PlayerMove : MonoBehaviour
     private CharacterController charController;
 
 
+    public Rigidbody Player_RB;
+
     private bool isJumping;
 
     private void Awake()
@@ -22,10 +24,14 @@ public class PlayerMove : MonoBehaviour
         charController = GetComponent<CharacterController>();
     }
 
+
     private void Update()
     {
         PlayerMovement();
     }
+
+
+    public float TimeCount = 1.0f;
 
     private void PlayerMovement()
     {
@@ -34,7 +40,6 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 forwardMovement = transform.forward * vertInput;
         Vector3 rightMovement = transform.right * horizInput;
-
 
         charController.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1.0f) * movementSpeed);
 
