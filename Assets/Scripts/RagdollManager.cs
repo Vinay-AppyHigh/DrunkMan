@@ -48,13 +48,13 @@ public class RagdollManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TurnOnRagdoll();
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         TurnOnRagdoll();
+    //     }
+    // }
 
     public void TurnOnRagdoll()
     {
@@ -62,11 +62,38 @@ public class RagdollManager : MonoBehaviour
         Rigidbody.useGravity = false;
         Animator.enabled = false;
         CharController.enabled = false;
-
+        // Debug.Log("3");
         foreach (Collider c in RagdollParts)
         {
             c.isTrigger = false;
             c.attachedRigidbody.velocity = Vector3.zero;
         }
     }
+
+
+    // void OnCollisionEnter(Collision collision)
+    // {
+    //     Debug.Log("1");
+    //     if (collision.collider.tag == "Obstacle")
+    //     {
+    //         Debug.Log("2");
+    //         TurnOnRagdoll();
+    //         Debug.Log("4");
+    //     }
+    // }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        // Debug.Log("1");
+        if (hit.transform.tag == "Obstacle")
+        {
+            // Debug.Log("2");
+            // hit.transform.SendMessage("TurnOnRagdoll", SendMessageOptions.DontRequireReceiver);
+            TurnOnRagdoll();
+            // Debug.Log("4");
+        }
+    }
+    
+    
+    
 }
