@@ -106,6 +106,8 @@ public class InputHandler : MonoBehaviour
     public float movement_Speed;
     public float rotations_Speed;
     CharacterController charCtrl;
+    private Animator Animator;
+
 
     public static float xMove, zMove;
 
@@ -113,6 +115,12 @@ public class InputHandler : MonoBehaviour
     void Awake()
     {
         charCtrl = GetComponent<CharacterController>();
+        SetAnimator();
+    }
+
+    void SetAnimator()
+    {
+        Animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -129,21 +137,33 @@ public class InputHandler : MonoBehaviour
         float gravity = 9.8f;
         Vector3 moveAxis = new Vector3(xMove, -gravity, zMove);
         charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
+
+        Animator.SetFloat("Walk", moveAxis.z * 2f);
+        Animator.SetFloat("Rotate", moveAxis.x * 2f);
     }
 
     void playerRotationControler()
     {
         if (xMove > 0)
+        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right),
                 rotations_Speed * Time.deltaTime);
+        }
         else if (xMove < 0)
+        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left),
                 rotations_Speed * Time.deltaTime);
+        }
+
         if (zMove > 0)
+        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward),
                 rotations_Speed * Time.deltaTime);
+        }
         else if (zMove < 0)
+        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back),
                 rotations_Speed * Time.deltaTime);
+        }
     }
 }
