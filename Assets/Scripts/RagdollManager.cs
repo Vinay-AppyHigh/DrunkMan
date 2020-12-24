@@ -12,7 +12,7 @@ public class RagdollManager : MonoBehaviour
     public Transform FrontRaycast, BackRaycast;
 
 
-    private bool OnGround = false, Standing = true;
+    public bool OnGround = false, Standing = true, GiveControls = true;
 
     void Awake()
     {
@@ -94,6 +94,7 @@ public class RagdollManager : MonoBehaviour
         CharController.enabled = false;
         OnGround = true;
         Standing = false;
+        GiveControls = false;
         // Debug.Log("3");
         foreach (Collider c in RagdollParts)
         {
@@ -107,37 +108,45 @@ public class RagdollManager : MonoBehaviour
         // this.gameObject.GetComponent<BoxCollider>().enabled = false;
 
         Animator.enabled = true;
-        OnGround = false;
-        Standing = true;
+        // OnGround = false;
+        // Standing = true;
         Rigidbody.useGravity = true;
         Rigidbody.isKinematic = false;
-        CharController.enabled = true;
         foreach (Collider c in RagdollParts)
         {
             c.isTrigger = true;
             c.attachedRigidbody.velocity = Vector3.zero;
         }
 
+        CharController.enabled = true;
+
         // Debug.Log("3");
+    }
+
+    public void GetUpFunc()
+    {
+        StartCoroutine(GetUp());
     }
 
     IEnumerator GetUp()
     {
         OnGround = false;
-        Debug.Log(" Getting UP ");
+
         yield return new WaitForSeconds(2f);
         GetUpFromFallenSide();
     }
 
     IEnumerator GetUpAnimationComplete()
     {
-        yield return new WaitForSeconds(2f);
-        GotUp();
+        Debug.Log(" Getting UP ");
+        yield return new WaitForSeconds(1f);
+        Debug.Log(" Got UP ");
+        GiveControls = true;
     }
 
-    void GotUp()
+    public void GotUp()
     {
-        Standing = true;
+        StartCoroutine(GetUpAnimationComplete());
     }
 
     void GetUpFromFallenSide()

@@ -105,6 +105,8 @@ public class InputHandler : MonoBehaviour
     public FloatingJoystick Joystick;
     public float movement_Speed;
     public float rotations_Speed;
+    public RagdollManager RagdollManager;
+
     CharacterController charCtrl;
     private Animator Animator;
 
@@ -116,6 +118,7 @@ public class InputHandler : MonoBehaviour
     {
         charCtrl = GetComponent<CharacterController>();
         SetAnimator();
+        SetRagdollManager();
     }
 
     void SetAnimator()
@@ -123,10 +126,22 @@ public class InputHandler : MonoBehaviour
         Animator = GetComponent<Animator>();
     }
 
+    void SetRagdollManager()
+    {
+        RagdollManager = GetComponent<RagdollManager>();
+    }
+
     void Update()
     {
-        playerMovmentControler();
-        playerRotationControler();
+        if (RagdollManager.GiveControls == true)
+        {
+            playerMovmentControler();
+            playerRotationControler();
+        }
+        // else
+        // {
+        //     RagdollManager.GetUpFunc();
+        // }
     }
 
     // Update is called once per frame
