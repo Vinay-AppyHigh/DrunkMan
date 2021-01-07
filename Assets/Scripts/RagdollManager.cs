@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class RagdollManager : MonoBehaviour
 {
     public Rigidbody Rigidbody;
-    public Animator Animator;
+   // public Animator Animator;
     public CharacterController CharController;
     public List<Collider> RagdollParts = new List<Collider>();
     public Transform FrontRaycast, BackRaycast;
@@ -17,7 +17,7 @@ public class RagdollManager : MonoBehaviour
     void Awake()
     {
         SetRigidbody();
-        SetAnimator();
+       // SetAnimator();
         SetCharController();
         SetRagdollParts();
     }
@@ -29,7 +29,7 @@ public class RagdollManager : MonoBehaviour
 
     void SetAnimator()
     {
-        Animator = GetComponent<Animator>();
+      //  Animator = GetComponent<Animator>();
     }
 
     void SetCharController()
@@ -88,13 +88,18 @@ public class RagdollManager : MonoBehaviour
     public void TurnOnRagdoll()
     {
         // this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        RagdollHelper helper = GetComponent<RagdollHelper>();
+        helper.ragdolled = true;
+
         Rigidbody.useGravity = false;
         Rigidbody.isKinematic = true;
-        Animator.enabled = false;
+     //   Animator.enabled = false;
         CharController.enabled = false;
         OnGround = true;
         Standing = false;
         GiveControls = false;
+
+
         // Debug.Log("3");
         foreach (Collider c in RagdollParts)
         {
@@ -106,10 +111,13 @@ public class RagdollManager : MonoBehaviour
     public void TurnOffRagdoll()
     {
         // this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        RagdollHelper helper = GetComponent<RagdollHelper>();
+        helper.ragdolled = false;
 
-        Animator.enabled = true;
-        // OnGround = false;
-        // Standing = true;
+       // Animator.enabled = true;
+       // Animator.Rebind();
+        OnGround = false;
+        Standing = true;
         Rigidbody.useGravity = true;
         Rigidbody.isKinematic = false;
         foreach (Collider c in RagdollParts)
@@ -120,7 +128,7 @@ public class RagdollManager : MonoBehaviour
 
         CharController.enabled = true;
 
-        // Debug.Log("3");
+       // Debug.Log("3");
     }
 
     public void GetUpFunc()
@@ -128,18 +136,20 @@ public class RagdollManager : MonoBehaviour
         StartCoroutine(GetUp());
     }
 
+
     IEnumerator GetUp()
     {
         OnGround = false;
 
         yield return new WaitForSeconds(2f);
+
         GetUpFromFallenSide();
     }
 
     IEnumerator GetUpAnimationComplete()
     {
         Debug.Log(" Getting UP ");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Debug.Log(" Got UP ");
         GiveControls = true;
     }
@@ -151,28 +161,29 @@ public class RagdollManager : MonoBehaviour
 
     void GetUpFromFallenSide()
     {
-        RaycastHit hitfront;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward), out hitfront,
-            1f))
-        {
-            Debug.DrawRay(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward) * hitfront.distance,
-                Color.yellow);
-            Debug.Log("Did Hit Front ");
-            TurnOffRagdoll();
-            Animator.SetTrigger("GetUpFromFront");
-        }
-
-        RaycastHit hitback;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(BackRaycast.position, transform.TransformDirection(BackRaycast.forward), out hitback, 1f))
-        {
-            Debug.DrawRay(BackRaycast.position, transform.TransformDirection(BackRaycast.forward) * hitback.distance,
-                Color.yellow);
-            Debug.Log("Did Hit Back ");
-            TurnOffRagdoll();
-            Animator.SetTrigger("GetUpFromBack");
-        }
+        // RaycastHit hitfront;
+        // // Does the ray intersect any objects excluding the player layer
+        // if (Physics.Raycast(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward), out hitfront,
+        //     1f))
+        // {
+        //     Debug.DrawRay(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward) * hitfront.distance,
+        //         Color.yellow);
+        //     Debug.Log("Did Hit Front ");
+        //    // TurnOffRagdoll();
+        //     //Animator.SetTrigger("GetUpFromFront");
+        // }
+        //
+        // RaycastHit hitback;
+        // // Does the ray intersect any objects excluding the player layer
+        // if (Physics.Raycast(BackRaycast.position, transform.TransformDirection(BackRaycast.forward), out hitback, 1f))
+        // {
+        //     Debug.DrawRay(BackRaycast.position, transform.TransformDirection(BackRaycast.forward) * hitback.distance,
+        //         Color.yellow);
+        //     Debug.Log("Did Hit Back ");
+        //     
+        //     //Animator.SetTrigger("GetUpFromBack");
+        // }
+        TurnOffRagdoll();
     }
 
     // void OnCollisionEnter(Collision collision)
@@ -191,7 +202,7 @@ public class RagdollManager : MonoBehaviour
         // Debug.Log("1");
         if (hit.transform.tag == "Obstacle")
         {
-            // Debug.Log("2");
+//            Debug.Log("2");
             // hit.transform.SendMessage("TurnOnRagdoll", SendMessageOptions.DontRequireReceiver);
             TurnOnRagdoll();
             // Debug.Log("4");
