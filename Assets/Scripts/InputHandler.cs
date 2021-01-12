@@ -108,6 +108,8 @@ public class InputHandler : MonoBehaviour
     public RagdollManager RagdollManager;
 
     CharacterController charCtrl;
+    private Rigidbody rbody;
+    private float joyAngle;
     private Animator Animator;
 
 
@@ -119,6 +121,13 @@ public class InputHandler : MonoBehaviour
         charCtrl = GetComponent<CharacterController>();
         SetAnimator();
         SetRagdollManager();
+    }
+
+    void Start()
+    {
+        rbody = GetComponent<Rigidbody>();
+        rbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |
+                            RigidbodyConstraints.FreezeRotationZ;
     }
 
     void SetAnimator()
@@ -136,49 +145,72 @@ public class InputHandler : MonoBehaviour
         if (RagdollManager.GiveControls == true)
         {
             playerMovmentControler();
-            playerRotationControler();
+            Rotate();
+            // playerRotationControler();
         }
+
         // else
         // {
         //     RagdollManager.GetUpFunc();
         // }
     }
 
-    // Update is called once per frame
+
     void playerMovmentControler()
     {
         xMove = Joystick.Horizontal; // + joystek.Horizontal;
         zMove = Joystick.Vertical; // + joystek.Vertical;
         float gravity = 9.8f;
+
         Vector3 moveAxis = new Vector3(xMove, -gravity, zMove);
-        charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
 
-        Animator.SetFloat("Walk", moveAxis.z * 2f);
-        Animator.SetFloat("Rotate", moveAxis.x * 2f);
+        Vector3 movementX = Camera.main.transform.right * moveAxis.x;
+        Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
+        Vector3 Direction = movementX + movementZ;
+
+        charCtrl.Move(((Direction) * movement_Speed * Time.deltaTime));
+
+        Animator.SetFloat("Walk", moveAxis.z );
+        // Animator.SetFloat("Rotate", moveAxis.x * 2f);
     }
 
-    void playerRotationControler()
+
+    void Rotate()
     {
-        if (xMove > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right),
-                rotations_Speed * Time.deltaTime);
-        }
-        else if (xMove < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left),
-                rotations_Speed * Time.deltaTime);
-        }
+        float inputX = Joystick.Horizontal;
+        float inputZ = Joystick.Vertical;
 
-        if (zMove > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward),
-                rotations_Speed * Time.deltaTime);
-        }
-        else if (zMove < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back),
-                rotations_Speed * Time.deltaTime);
-        }
+        Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
+        Quaternion lookRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
+
+        float step = rotations_Speed * Time.deltaTime;
+        transform.rotation = Quaternion.RotateTowards(lookRotation, transform.rotation, step);
     }
+
+
+    //
+    // void playerRotationControler()
+    // {
+    //     if (xMove > 0)
+    //     {
+    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right),
+    //             rotations_Speed * Time.deltaTime);
+    //     }
+    //     else if (xMove < 0)
+    //     {
+    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left),
+    //             rotations_Speed * Time.deltaTime);
+    //     }
+    //
+    //     if (zMove > 0)
+    //     {
+    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward),
+    //             rotations_Speed * Time.deltaTime);
+    //     }
+    //     else if (zMove < 0)
+    //     {
+    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back),
+    //             rotations_Speed * Time.deltaTime);
+    //     }
+    // }
 }
