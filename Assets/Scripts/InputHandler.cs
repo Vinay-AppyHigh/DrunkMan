@@ -101,6 +101,7 @@ public class InputHandler : MonoBehaviour
     //     }
     // }
 
+    public static InputHandler Instance;
 
     public FloatingJoystick Joystick;
     public float movement_Speed;
@@ -118,6 +119,9 @@ public class InputHandler : MonoBehaviour
     //private Vector3 facDir;
     void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+
         charCtrl = GetComponent<CharacterController>();
         SetAnimator();
         SetRagdollManager();
@@ -160,17 +164,17 @@ public class InputHandler : MonoBehaviour
     {
         xMove = Joystick.Horizontal; // + joystek.Horizontal;
         zMove = Joystick.Vertical; // + joystek.Vertical;
-        float gravity = 9.8f;
+        float gravity = -9.8f;
 
-        Vector3 moveAxis = new Vector3(xMove, -gravity, zMove);
+        Vector3 moveAxis = new Vector3(xMove, gravity, zMove);
 
         Vector3 movementX = Camera.main.transform.right * moveAxis.x;
         Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
         Vector3 Direction = movementX + movementZ;
-
+        // moveAxis = moveAxis + Direction;
         charCtrl.Move(((Direction) * movement_Speed * Time.deltaTime));
 
-        Animator.SetFloat("Walk", moveAxis.z );
+        Animator.SetFloat("Walk", moveAxis.z);
         // Animator.SetFloat("Rotate", moveAxis.x * 2f);
     }
 
