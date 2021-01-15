@@ -134,19 +134,18 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
                 _jumpPressed = false;
             }
         }
-
-        public BzRagdoll BzRagdoll;
-
-        void OnCollisionEnter(Collider collision)
-        {
-            Debug.Log("DamageObject  1  ");
-            if (collision.gameObject.tag == "DamageObject")
-            {
-                Debug.Log("DamageObject  2  ");
-                BzRagdoll.RagdollIn();
-            }
-
-            _health.IsDead();
-        }
+        //
+        // public BzRagdoll BzRagdoll;
+        //
+        // void OnCollisionEnter(Collider collision)
+        // {
+        //     Debug.Log("DamageObject  1  ");
+        //     if (collision.gameObject.tag == "DamageObject")
+        //     {
+        //         Debug.Log("DamageObject  2  ");
+        //         BzRagdoll.RagdollIn();
+        //     }
+        //
+        // }
     }
 }
