@@ -131,7 +131,7 @@ public class InputHandler : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody>();
         rbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |
-                            RigidbodyConstraints.FreezeRotationZ;
+                            RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
     }
 
     void SetAnimator()
@@ -172,12 +172,13 @@ public class InputHandler : MonoBehaviour
         Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
         Vector3 Direction = movementX + movementZ;
         // moveAxis = moveAxis + Direction;
-        charCtrl.Move(((Direction) * movement_Speed * Time.deltaTime));
+        charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
 
         Animator.SetFloat("Walk", moveAxis.z);
         // Animator.SetFloat("Rotate", moveAxis.x * 2f);
     }
 
+    private Vector3 LastRotationDirection;
 
     void Rotate()
     {
@@ -185,7 +186,13 @@ public class InputHandler : MonoBehaviour
         float inputZ = Joystick.Vertical;
 
         Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
-        Quaternion lookRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
+        
+        if (inputX != 0 || inputZ != 0)
+        {
+            LastRotationDirection = lookDirection;
+        }
+
+        Quaternion lookRotation = Quaternion.LookRotation(LastRotationDirection, Vector3.up);
 
         float step = rotations_Speed * Time.deltaTime;
         transform.rotation = Quaternion.RotateTowards(lookRotation, transform.rotation, step);
