@@ -123,7 +123,7 @@ public class RagdollHelper : MonoBehaviour
                 Vector3 newRootPosition = transform.position + animatedToRagdolled;
 
                 RaycastHit[] hits = Physics.RaycastAll(new Ray(newRootPosition, Vector3.down));
-                newRootPosition.y = -0.4528016f;
+                newRootPosition.y = -0.6f;
                 foreach (RaycastHit hit in hits)
                 {
                     if (!hit.transform.IsChildOf(transform))

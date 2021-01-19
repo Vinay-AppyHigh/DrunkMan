@@ -109,6 +109,7 @@ public class InputHandler : MonoBehaviour
     public RagdollManager RagdollManager;
 
     CharacterController charCtrl;
+
     private Rigidbody rbody;
     private float joyAngle;
     private Animator Animator;
@@ -131,7 +132,7 @@ public class InputHandler : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody>();
         rbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |
-                            RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+         RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
     }
 
     void SetAnimator()
@@ -166,16 +167,23 @@ public class InputHandler : MonoBehaviour
         zMove = Joystick.Vertical; // + joystek.Vertical;
         float gravity = -9.8f;
 
+        Vector3 moveAxis = new Vector3(xMove, 0, zMove);
         Vector3 moveAxis = new Vector3(xMove, gravity, zMove);
 
-        Vector3 movementX = Camera.main.transform.right * moveAxis.x;
-        Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
-        Vector3 Direction = movementX + movementZ;
-        // moveAxis = moveAxis + Direction;
+        // Vector3 movementX = Camera.main.transform.right * moveAxis.x;
+        // Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
+        // Vector3 Direction = movementX + movementZ;
+        // moveAxis = new Vector3(moveAxis.x + Direction.x, 0f, moveAxis.z + Direction.z);
+
         charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
 
-        Animator.SetFloat("Walk", moveAxis.z);
+        // Animator.SetFloat("Walk", moveAxis.z);
         // Animator.SetFloat("Rotate", moveAxis.x * 2f);
+    }
+
+    void playerMovmentControlerbyRB()
+    {
+        
     }
 
     private Vector3 LastRotationDirection;
@@ -186,7 +194,7 @@ public class InputHandler : MonoBehaviour
         float inputZ = Joystick.Vertical;
 
         Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
-        
+
         if (inputX != 0 || inputZ != 0)
         {
             LastRotationDirection = lookDirection;
