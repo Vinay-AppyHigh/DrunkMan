@@ -132,7 +132,7 @@ public class InputHandler : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody>();
         rbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |
-         RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+                            RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
     }
 
     void SetAnimator()
@@ -164,16 +164,16 @@ public class InputHandler : MonoBehaviour
     void playerMovmentControler()
     {
         xMove = Joystick.Horizontal; // + joystek.Horizontal;
-        zMove = Joystick.Vertical; // + joystek.Vertical;
+        // zMove = Joystick.Vertical; // + joystek.Vertical;
+        zMove = 1f;
         float gravity = -9.8f;
 
-        Vector3 moveAxis = new Vector3(xMove, 0, zMove);
         Vector3 moveAxis = new Vector3(xMove, gravity, zMove);
 
-        // Vector3 movementX = Camera.main.transform.right * moveAxis.x;
-        // Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
-        // Vector3 Direction = movementX + movementZ;
-        // moveAxis = new Vector3(moveAxis.x + Direction.x, 0f, moveAxis.z + Direction.z);
+        Vector3 movementX = Camera.main.transform.right * moveAxis.x;
+        Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
+        Vector3 Direction = movementX + movementZ;
+        moveAxis = new Vector3(Direction.x, gravity, Direction.z);
 
         charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
 
@@ -183,7 +183,6 @@ public class InputHandler : MonoBehaviour
 
     void playerMovmentControlerbyRB()
     {
-        
     }
 
     private Vector3 LastRotationDirection;
@@ -193,17 +192,25 @@ public class InputHandler : MonoBehaviour
         float inputX = Joystick.Horizontal;
         float inputZ = Joystick.Vertical;
 
+        inputZ = Mathf.Clamp(inputZ, 0, 1);
+
         Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
 
-        if (inputX != 0 || inputZ != 0)
-        {
-            LastRotationDirection = lookDirection;
-        }
+        // if (inputX != 0 || inputZ != 0)
+        // {
+        //     LastRotationDirection = lookDirection;
+        // }
 
-        Quaternion lookRotation = Quaternion.LookRotation(LastRotationDirection, Vector3.up);
+        // LastRotationDirection = new Vector3(Mathf.Clamp(LastRotationDirection.x, -0.5f, 0.5f), LastRotationDirection.y,
+        //     LastRotationDirection.z);
+
+        Debug.Log("LastRotationDirection = " + LastRotationDirection);
+
+        Quaternion lookRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
+
 
         float step = rotations_Speed * Time.deltaTime;
-        transform.rotation = Quaternion.RotateTowards(lookRotation, transform.rotation, step);
+        transform.rotation = Quaternion.Slerp(lookRotation, transform.rotation, step);
     }
 
 
