@@ -6,8 +6,10 @@ using UnityEngine.UIElements;
 public class RagdollManager : MonoBehaviour
 {
     public Rigidbody Rigidbody;
-   // public Animator Animator;
+
+    // public Animator Animator;
     public CharacterController CharController;
+    public CapsuleCollider CapsuleCollider;
     public List<Collider> RagdollParts = new List<Collider>();
     public Transform FrontRaycast, BackRaycast;
 
@@ -17,7 +19,7 @@ public class RagdollManager : MonoBehaviour
     void Awake()
     {
         SetRigidbody();
-       // SetAnimator();
+        // SetAnimator();
         SetCharController();
         SetRagdollParts();
     }
@@ -29,12 +31,13 @@ public class RagdollManager : MonoBehaviour
 
     void SetAnimator()
     {
-      //  Animator = GetComponent<Animator>();
+        //  Animator = GetComponent<Animator>();
     }
 
     void SetCharController()
     {
         CharController = GetComponent<CharacterController>();
+        CapsuleCollider = GetComponent<CapsuleCollider>();
     }
 
 
@@ -93,8 +96,9 @@ public class RagdollManager : MonoBehaviour
 
         Rigidbody.useGravity = false;
         Rigidbody.isKinematic = true;
-     //   Animator.enabled = false;
-        CharController.enabled = false;
+        //   Animator.enabled = false;
+//        CharController.enabled = false;
+        CapsuleCollider.enabled = false;
         OnGround = true;
         Standing = false;
         GiveControls = false;
@@ -114,8 +118,8 @@ public class RagdollManager : MonoBehaviour
         RagdollHelper helper = GetComponent<RagdollHelper>();
         helper.ragdolled = false;
 
-       // Animator.enabled = true;
-       // Animator.Rebind();
+        // Animator.enabled = true;
+        // Animator.Rebind();
         OnGround = false;
         Standing = true;
         Rigidbody.useGravity = true;
@@ -126,9 +130,9 @@ public class RagdollManager : MonoBehaviour
             c.attachedRigidbody.velocity = Vector3.zero;
         }
 
-        CharController.enabled = true;
-
-       // Debug.Log("3");
+      //  CharController.enabled = true;
+        CapsuleCollider.enabled = true;
+        // Debug.Log("3");
     }
 
     public void GetUpFunc()
@@ -186,16 +190,17 @@ public class RagdollManager : MonoBehaviour
         TurnOffRagdoll();
     }
 
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     Debug.Log("1");
-    //     if (collision.collider.tag == "Obstacle")
-    //     {
-    //         Debug.Log("2");
-    //         TurnOnRagdoll();
-    //         Debug.Log("4");
-    //     }
-    // }
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("1");
+        if (collision.collider.tag == "Obstacle")
+        {
+            Debug.Log("2");
+            TurnOnRagdoll();
+            Debug.Log("4");
+        }
+    }
+
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
