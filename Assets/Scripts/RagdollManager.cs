@@ -98,7 +98,7 @@ public class RagdollManager : MonoBehaviour
         Rigidbody.isKinematic = true;
         //   Animator.enabled = false;
 //        CharController.enabled = false;
-        CapsuleCollider.enabled = false;
+        CapsuleCollider.isTrigger = true;
         OnGround = true;
         Standing = false;
         GiveControls = false;
@@ -130,8 +130,8 @@ public class RagdollManager : MonoBehaviour
             c.attachedRigidbody.velocity = Vector3.zero;
         }
 
-      //  CharController.enabled = true;
-        CapsuleCollider.enabled = true;
+        //  CharController.enabled = true;
+        CapsuleCollider.isTrigger = false;
         // Debug.Log("3");
     }
 

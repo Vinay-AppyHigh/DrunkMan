@@ -19,6 +19,6 @@ public class ThirdPersonControllerInput : MonoBehaviour
     void Update()
     {
         Control.Hinput = Joystick.Horizontal;
-        Control.Vinput = 1; //Joystick.Vertical;
+        Control.Vinput = Mathf.Clamp(Joystick.Vertical, 0, 1);
     }
 }
