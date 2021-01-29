@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void TriggerEventForDoor()
     {
+        Debug.Log("open");
         EndLineAnimator.SetTrigger("OpenDoors");
     }
 
