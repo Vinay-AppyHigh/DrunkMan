@@ -168,12 +168,12 @@ public class InputHandler : MonoBehaviour
         zMove = 1f;
         float gravity = -9.8f;
 
-        Vector3 moveAxis = new Vector3(xMove, gravity, zMove);
+        // Vector3 moveAxis = new Vector3(xMove, gravity, zMove);
 
-        Vector3 movementX = Camera.main.transform.right * moveAxis.x;
-        Vector3 movementZ = Camera.main.transform.forward * moveAxis.z;
+        Vector3 movementX = Camera.main.transform.right * xMove;
+        Vector3 movementZ = Camera.main.transform.forward * zMove;
         Vector3 Direction = movementX + movementZ;
-        moveAxis = new Vector3(Direction.x, gravity, Direction.z);
+        Vector3 moveAxis = new Vector3(Direction.x * 2f, gravity, Direction.z);
 
         charCtrl.Move(((moveAxis) * movement_Speed * Time.deltaTime));
 
@@ -196,47 +196,24 @@ public class InputHandler : MonoBehaviour
 
         Vector3 lookDirection = new Vector3(inputX, 0, inputZ);
 
-        // if (inputX != 0 || inputZ != 0)
-        // {
-        //     LastRotationDirection = lookDirection;
-        // }
+        if (inputX == 0)
+        {
+            lookDirection = transform.position -
+                            new Vector3(Camera.main.transform.position.x + inputX, transform.position.y,
+                                Camera.main.transform.position.z + inputZ);
+        }
+
+
+        //Debug.Log("lookDirection = " + lookDirection);
 
         // LastRotationDirection = new Vector3(Mathf.Clamp(LastRotationDirection.x, -0.5f, 0.5f), LastRotationDirection.y,
         //     LastRotationDirection.z);
 
-        Debug.Log("LastRotationDirection = " + LastRotationDirection);
 
         Quaternion lookRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
 
 
         float step = rotations_Speed * Time.deltaTime;
-        transform.rotation = Quaternion.Slerp(lookRotation, transform.rotation, step);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, step);
     }
-
-
-    //
-    // void playerRotationControler()
-    // {
-    //     if (xMove > 0)
-    //     {
-    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right),
-    //             rotations_Speed * Time.deltaTime);
-    //     }
-    //     else if (xMove < 0)
-    //     {
-    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left),
-    //             rotations_Speed * Time.deltaTime);
-    //     }
-    //
-    //     if (zMove > 0)
-    //     {
-    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward),
-    //             rotations_Speed * Time.deltaTime);
-    //     }
-    //     else if (zMove < 0)
-    //     {
-    //         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back),
-    //             rotations_Speed * Time.deltaTime);
-    //     }
-    // }
 }
