@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         LevelClearMssg.SetActive(true);
         yield return new WaitForSeconds(2);
-        InputHandler.Instance.RagdollManager.GiveControls = false;
+        RagdollManager.Instance.GiveControls = false;
     }
 
     public void TriggerEventForDoor()

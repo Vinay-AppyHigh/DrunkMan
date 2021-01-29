@@ -92,6 +92,11 @@ public class RagdollHelper : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Start()
     {
         Component[] components = GetComponentsInChildren(typeof(Transform));
@@ -103,8 +108,6 @@ public class RagdollHelper : MonoBehaviour
             bodyPart.transform = c as Transform;
             bodyParts.Add(bodyPart);
         }
-
-        anim = GetComponent<Animator>();
     }
 
 
