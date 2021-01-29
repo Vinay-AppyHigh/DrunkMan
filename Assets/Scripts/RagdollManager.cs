@@ -7,21 +7,40 @@ public class RagdollManager : MonoBehaviour
 {
     public Rigidbody Rigidbody;
 
+    public static RagdollManager Instance;
+
     // public Animator Animator;
     public CharacterController CharController;
     public CapsuleCollider CapsuleCollider;
     public List<Collider> RagdollParts = new List<Collider>();
-    public Transform FrontRaycast, BackRaycast;
 
 
     public bool OnGround = false, Standing = true, GiveControls = true;
 
     void Awake()
     {
+        if (Instance == null)
+            Instance = this;
         SetRigidbody();
         // SetAnimator();
         SetCharController();
         SetRagdollParts();
+    }
+
+    public GameObject BlackScreen;
+
+    void FadeBlackOut()
+    {
+        BlackScreen.GetComponent<Animator>().SetTrigger("FadeOut");
+    }
+
+    IEnumerator Start()
+    {
+        TurnOnRagdoll();
+        yield return new WaitForEndOfFrame();
+        TurnOffRagdoll();
+        yield return new WaitForSeconds(4f);
+        FadeBlackOut();
     }
 
     void SetRigidbody()
@@ -69,23 +88,6 @@ public class RagdollManager : MonoBehaviour
         {
             StartCoroutine(GetUp());
         }
-
-        // RaycastHit hitfront1;
-        // if (Physics.Raycast(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward), out hitfront1,
-        //     1f))
-        // {
-        // }
-        //
-        // Debug.DrawRay(FrontRaycast.position, transform.TransformDirection(FrontRaycast.forward),
-        //     Color.yellow);
-        //
-        // RaycastHit hitback1;
-        // if (Physics.Raycast(BackRaycast.position, transform.TransformDirection(BackRaycast.forward), out hitback1, 1f))
-        // {
-        // }
-        //
-        // Debug.DrawRay(BackRaycast.position, transform.TransformDirection(BackRaycast.forward),
-        //     Color.yellow);
     }
 
     public void TurnOnRagdoll()
@@ -98,13 +100,13 @@ public class RagdollManager : MonoBehaviour
         Rigidbody.isKinematic = true;
         //   Animator.enabled = false;
 //        CharController.enabled = false;
-        CapsuleCollider.enabled = false;
+        CapsuleCollider.isTrigger = true;
         OnGround = true;
         Standing = false;
         GiveControls = false;
 
 
-        // Debug.Log("3");
+        Debug.Log("3");
         foreach (Collider c in RagdollParts)
         {
             c.isTrigger = false;
@@ -130,8 +132,8 @@ public class RagdollManager : MonoBehaviour
             c.attachedRigidbody.velocity = Vector3.zero;
         }
 
-      //  CharController.enabled = true;
-        CapsuleCollider.enabled = true;
+        //  CharController.enabled = true;
+        CapsuleCollider.isTrigger = false;
         // Debug.Log("3");
     }
 
@@ -144,9 +146,7 @@ public class RagdollManager : MonoBehaviour
     IEnumerator GetUp()
     {
         OnGround = false;
-
         yield return new WaitForSeconds(2f);
-
         GetUpFromFallenSide();
     }
 

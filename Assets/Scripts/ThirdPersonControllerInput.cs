@@ -18,7 +18,10 @@ public class ThirdPersonControllerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Control.Hinput = Joystick.Horizontal;
-        Control.Vinput = 1; //Joystick.Vertical;
+        if (RagdollManager.Instance.GiveControls == true)
+        {
+            Control.Hinput = Joystick.Horizontal;
+            Control.Vinput = Mathf.Clamp(Joystick.Vertical, 0, 1);
+        }
     }
 }
