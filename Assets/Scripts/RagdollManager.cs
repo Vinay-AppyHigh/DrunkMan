@@ -95,7 +95,6 @@ public class RagdollManager : MonoBehaviour
         // this.gameObject.GetComponent<BoxCollider>().enabled = false;
         RagdollHelper helper = GetComponent<RagdollHelper>();
         helper.ragdolled = true;
-
         Rigidbody.useGravity = false;
         Rigidbody.isKinematic = true;
         //   Animator.enabled = false;
@@ -119,7 +118,6 @@ public class RagdollManager : MonoBehaviour
         // this.gameObject.GetComponent<BoxCollider>().enabled = false;
         RagdollHelper helper = GetComponent<RagdollHelper>();
         helper.ragdolled = false;
-
         // Animator.enabled = true;
         // Animator.Rebind();
         OnGround = false;

@@ -23,5 +23,10 @@ public class ThirdPersonControllerInput : MonoBehaviour
             Control.Hinput = Joystick.Horizontal;
             Control.Vinput = Mathf.Clamp(Joystick.Vertical, 0, 1);
         }
+        else
+        {
+            Control.Hinput = 0f;
+            Control.Vinput = 0f;
+        }
     }
 }
