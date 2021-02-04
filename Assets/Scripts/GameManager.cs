@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
+using Ragdoll;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     public BoxCollider DoorTrigger;
     public Animator EndLineAnimator;
 
+    public RagdollManager RagdollManager;
+
+    public GameObject BlackScreen;
 
     void Awake()
     {
@@ -23,23 +27,32 @@ public class GameManager : MonoBehaviour
         LevelClearMssg.SetActive(false);
         EndLine.isTrigger = true;
         DoorTrigger.isTrigger = true;
+        StartCoroutine(FadeBlackOut());
     }
 
     IEnumerator GameFinished()
     {
         LevelClearMssg.SetActive(true);
         yield return new WaitForSeconds(2);
-        RagdollManager.Instance.GiveControls = false;
+        RagdollManager.GiveControls = false;
     }
 
     public void TriggerEventForDoor()
     {
-        Debug.Log("open");
         EndLineAnimator.SetTrigger("OpenDoors");
     }
 
     public void TriggerEventForEndLine()
     {
         StartCoroutine(GameFinished());
+    }
+
+
+    IEnumerator FadeBlackOut()
+    {
+        yield return new WaitForSeconds(4f);
+        BlackScreen.GetComponent<Animator>().SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
+        AIList.Instance.GiveControlsToAll();
     }
 }
