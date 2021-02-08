@@ -8,7 +8,7 @@ public class AIHelper : MonoBehaviour
     public AICharacterControl AiCharacterControl;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         AiCharacterControl = GetComponent<AICharacterControl>();
     }
