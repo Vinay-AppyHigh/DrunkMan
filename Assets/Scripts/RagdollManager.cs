@@ -202,7 +202,8 @@ namespace Ragdoll
 
         void OnCollisionEnter(Collision collision)
         {
-            if (collision.collider.tag == "Obstacle")
+            if (collision.collider.tag == "Obstacle" || collision.collider.tag == "Player" ||
+                collision.collider.tag == "AI")
             {
                 TurnOnRagdoll();
             }
