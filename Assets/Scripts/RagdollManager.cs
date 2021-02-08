@@ -202,12 +202,9 @@ namespace Ragdoll
 
         void OnCollisionEnter(Collision collision)
         {
-            Debug.Log("1");
             if (collision.collider.tag == "Obstacle")
             {
-                Debug.Log("2");
                 TurnOnRagdoll();
-                Debug.Log("4");
             }
         }
 
